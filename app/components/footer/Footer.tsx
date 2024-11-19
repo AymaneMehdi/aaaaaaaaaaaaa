@@ -38,7 +38,7 @@ const Footer = () => {
               and greatest devices and accessories to our customers. With a wide
               selection of phones, TVS, laptops, watches, and accessoriesk
             </p>
-            <p>&copy; {new Date().getFullYear()} E-Shop. All rights reserved</p>
+            <p>&copy; {new Date().getFullYear()} FeizhouStore. All rights reserved</p>
           </div>
           <FooterList>
             <h3 className=" text-base font-bold mb-2">Follow us</h3>
