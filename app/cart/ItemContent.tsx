@@ -30,7 +30,7 @@ const ItemContent: React.FC<ItemContentProps> = ({ item }) => {
             />
           </div>
         </Link>
-        <div className=" flex flex-col justify-between text-[#847577]">
+        <div className=" flex flex-col justify-between text-cyan-500">
           <Link href={`/product/${item.id}`}>{truncatetext(item.name)}</Link>
           <div>{item.selectedImg.color}</div>
           <div className="w-[70px]">
@@ -43,10 +43,10 @@ const ItemContent: React.FC<ItemContentProps> = ({ item }) => {
           </div>
         </div>
       </div>
-      <div className=" justify-self-center text-[#847577]">
+      <div className=" justify-self-center text-cyan-500">
         {formatPrice(item.price)}
       </div>
-      <div className=" justify-self-center text-[#847577]">
+      <div className=" justify-self-center text-cyan-500">
         {" "}
         <SetQuantity
           cartCounter={true}
@@ -59,7 +59,7 @@ const ItemContent: React.FC<ItemContentProps> = ({ item }) => {
           }}
         />
       </div>
-      <div className=" justify-self-end font-semibold text-[#847577]">
+      <div className=" justify-self-end font-semibold text-cyan-500">
         {item.price * item.quantity}
       </div>
     </div>

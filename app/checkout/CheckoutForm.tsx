@@ -70,17 +70,17 @@ const CheckoutForm: React.FC<CheckoutFormProps> = ({
       <div className=" mb-6">
         <Heading titel="Enter your detailes to complete checkout" />
       </div>
-      <h2 className=" font-semibold mt-4 mb-2 text-[#463f3a]">
+      <h2 className=" font-semibold mt-4 mb-2 text-cyan-500">
         Address Information
       </h2>
       <AddressElement
         options={{ mode: "shipping", allowedCountries: ["US", "KE"] }}
       />
-      <h2 className=" font-semibold mt-4 mb-2 text-[#463f3a]">
+      <h2 className=" font-semibold mt-4 mb-2 text-cyan-500">
         Payment Information
       </h2>
       <PaymentElement id="payment-element" options={{ layout: "tabs" }} />
-      <div className=" py-4 text-center text-[#463f3a] text-xl font-bold">
+      <div className=" py-4 text-center text-cyan-500 text-xl font-bold">
         Total:{formatedPrice}
       </div>
       <Button

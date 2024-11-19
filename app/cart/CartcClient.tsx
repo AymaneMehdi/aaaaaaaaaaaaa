@@ -24,7 +24,7 @@ const CartClient: React.FC<CartClientProps> = ({ currentUser }) => {
 
   if (!cartProducts || cartProducts.length === 0) {
     return (
-      <div className=" flex flex-col items-center text-[#847577]">
+      <div className=" flex flex-col items-center text-cyan-500">
         <div className=" text-2xl">Your cart is empty</div>
         <div>
           <Link
@@ -42,7 +42,7 @@ const CartClient: React.FC<CartClientProps> = ({ currentUser }) => {
   return (
     <div>
       <Heading titel="Shopping Cart" center />
-      <div className=" grid grid-cols-5 text-xs gap-4 pb-2 items-center mt-8 text-[#847577]">
+      <div className=" grid grid-cols-5 text-xs gap-4 pb-2 items-center mt-8 text-cyan-500">
         <div className=" col-span-2 justify-self-center">PRODUCT</div>
         <div className=" justify-self-center">PRICE</div>
         <div className=" justify-self-center">QUANTITY</div>
@@ -63,16 +63,16 @@ const CartClient: React.FC<CartClientProps> = ({ currentUser }) => {
             }}
             small
             outline
-            custom="hover:bg-[#847577] hover:text-white"
+            custom="hover:bg-cyan-500 hover:text-white"
           />
         </div>
         <div className=" text-sm flex flex-col gap-1 items-start">
-          <div className=" flex justify-between w-full text-base font-semibold text-[#847577]">
+          <div className=" flex justify-between w-full text-base font-semibold text-cyan-500">
             <span>Subtotal</span>
             <span>{formatPrice(cartTotalAmount)} </span>
           </div>
 
-          <p className=" text-[#847577]">
+          <p className=" text-cyan-500">
             Taxes and shipping calculate at checkout
           </p>
           <Button
@@ -84,7 +84,7 @@ const CartClient: React.FC<CartClientProps> = ({ currentUser }) => {
           />
           <Link
             href={"/"}
-            className=" text-[#847577] flex items-center gap-1 mt-2"
+            className=" text-cyan-500 flex items-center gap-1 mt-2"
           >
             <MdArrowBack />
             <span>Continue Shopping</span>
