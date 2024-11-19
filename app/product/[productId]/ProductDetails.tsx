@@ -116,10 +116,10 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
         cartProduct={cartProduct}
         handleColorSelect={handleColorSelect}
       />
-      <div className=" flex flex-col gap-1 text-[#847577] text-sm">
-        <h2 className=" text-3xl font-medium text-[#847577]">{product.name}</h2>
+      <div className=" flex flex-col gap-1 text-cyan-500 text-sm">
+        <h2 className=" text-3xl font-medium text-cyan-500">{product.name}</h2>
         <Horizontal />
-        <h2 className="text-3xl text-[#847577] font-bold">${product.price}</h2>
+        <h2 className="text-3xl text-cyan-500 font-bold">${product.price}</h2>
         <div className=" flex items-center gap-2">
           <Rating value={productRating} readOnly />
           <div>{product.reviews.length} reviews</div>
@@ -139,7 +139,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
         <Horizontal />
         {isProductInCart ? (
           <>
-            <p className=" flex gap-1 text-[#847577] items-center mb-1">
+            <p className=" flex gap-1 textcy-an-500 items-center mb-1">
               <MdCheckCircle size={20} className=" text-teal-400" />
               <span> Product added to cart</span>
             </p>
@@ -155,7 +155,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
           </>
         ) : !cartProduct.inStock ? (
           <>
-            <p className=" flex gap-1 text-[#847577] items-center mb-1">
+            <p className=" flex gap-1 text-cyan-500 items-center mb-1">
               <CgUnavailable size={20} className=" text-rose-400" />
               <span> We sorry product out of Stock </span>
             </p>
