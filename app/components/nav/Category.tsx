@@ -44,11 +44,11 @@ const Category: React.FC<CategoryProps> = ({ label, icon: Icon, selected }) => {
   return (
     <div
       onClick={handleClick}
-      className={`flex items-center justify-center text-center gap-1 p-2 border-b-2 hover:text-[#847577] transition cursor-pointer
+      className={`flex items-center justify-center text-center gap-1 p-2 border-b-2 hover:text-cyan-300 transition cursor-pointer
     ${
       selected
-        ? " border-b-[#847577] text-[#847577]"
-        : " border-transparent text-[#A6A2A2]"
+        ? " border-cyan-500 text-cyan-300"
+        : " border-transparent text-cyan-500"
     }`}
     >
       <Icon size={20} />
