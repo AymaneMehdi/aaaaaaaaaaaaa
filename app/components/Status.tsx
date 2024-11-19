@@ -1,0 +1,25 @@
+import { IconType } from "react-icons";
+
+interface statusProps {
+  text: string;
+  icon: IconType;
+  bg: string;
+  color: string;
+}
+
+const Status: React.FC<statusProps> = ({ text, icon: Icon, bg, color }) => {
+  return (
+    <div
+      className={`
+    ${bg}
+    ${color}
+    px-1 rounded flex items-center gap-1
+    `}
+    >
+      {text}
+      <Icon size={15} />
+    </div>
+  );
+};
+
+export default Status;
