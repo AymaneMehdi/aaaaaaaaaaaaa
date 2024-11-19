@@ -77,7 +77,7 @@ const LoginForm: React.FC<LoginformProps> = ({ currentUser }) => {
           signIn("google");
         }}
       />
-      <hr className=" bg-slate-300 w-full h-px" />
+      <hr className=" bg-cyan-500 w-full h-px" />
 
       <Input
         id="email"
@@ -100,7 +100,7 @@ const LoginForm: React.FC<LoginformProps> = ({ currentUser }) => {
         label={isLoading ? "Loading" : "Login"}
         onClick={handleSubmit(onSubmit)}
       />
-      <p className=" text-sm text-[#A6A2A2]">
+      <p className=" text-sm text-cyan-500">
         Do not have an account?{" "}
         <Link className=" underline" href="/register">
           Sign Up
